@@ -1,25 +1,21 @@
-import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
-const page1: React.FC = () => {
+const Page1: React.FC = () => {
   return (
     <IonPage>
-        
       <IonHeader>
         <IonToolbar>
-          <IonTitle>login</IonTitle>
+
+          <IonButtons slot="start">
+            <IonMenuButton></IonMenuButton>
+          </IonButtons>
+          
+          <IonTitle>Page1</IonTitle>
+
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding">
-
-        <IonButton expand="full" onClick={() => alert('Login')}>
-          Login
-        </IonButton>
-
-
-      </IonContent>
     </IonPage>
   );
 };
 
-export default page1;
+export default Page1;
